@@ -1,0 +1,29 @@
+option solver cplex;
+option cplex_options 'time=600';
+
+model ../color.mod;
+data ../input/color12-3.dat;
+solve;
+
+display solve_message>../output/color12-3.output;
+
+#number of Conflicts
+param numConflicts default 0;
+print "Graph Coloring:">../output/color12-3.output;
+printf "Node\tColor\n">../output/color12-3.output;
+for {i in 0..numNodes-1}{
+        for {j in 0..numColors-1}{
+                if color[i, j] then {
+                        printf "%d\t%d\n", i, j>../output/color12-3.output
+                }
+        }
+        for {j in i..numNodes-1}{
+                if conflict[i, j] > 0 then {
+                        let numConflicts := numConflicts + 1;
+                }
+        }
+}
+
+printf "Number of node pairs in conflict: %d\n", numConflicts>../output/color12-3.output;
+printf "\n">../output/color12-3.output;
+quit;
