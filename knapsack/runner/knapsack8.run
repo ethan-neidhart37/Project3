@@ -1,0 +1,6 @@
+option solver "cplex";
+model knapsack.mod;
+data input/knapsack8.dat;
+solve;
+
+#Display here
