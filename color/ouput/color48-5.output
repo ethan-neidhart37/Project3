@@ -1,0 +1,104 @@
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                         • MobaXterm 9.3 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to eneidhar@psi.coe.neu.edu                          │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✔  (remote display is forwarded through SSH) │
+     │   • DISPLAY         : ✔  (automatically set on remote server)      │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+Last login: Wed Jun  7 13:13:02 2017 from psi.coe.neu.edu
++-----------------------------------------------------------------------------+
+             This is the College of Engineering Linux system.
+     To report problems or request help, send email to help@coe.neu.edu.
+
+              Unauthorized use of this system is prohibited.
+         By using this system, you consent to the ECC usage policy.
+          Please read it at http://www.coe.neu.edu/computer#usage
++-----------------------------------------------------------------------------+
+                 NOTE: you may use /tmp only for scratch space
+          DO NOT leave data there, it will be deleted without notice!
++-----------------------------------------------------------------------------+
+  You may run your jobs on the gateway machines now (currently Eta and Zeta)
+            They are very powerful and have lots of memory!
+                No need to jump to other Linux hosts.
+
+             Programs that keep running after you log out
+    and server programs (ones that open a network port for connections)
+                    * *   are NOT permitted   * *
+    except by advance permission of the ECC staff at help@coe.neu.edu.
+
+         WARNING: weekly maintenance reboot at 6 AM on Thursdays
++-----------------------------------------------------------------------------+
+
+-bash-4.2$ cd Documents/algorithms/p3/color/output/
+-bash-4.2$ ls
+color12-3.output  color192-6.output  color192-8.output  color24-5.output  color48-6.output  color96-7.output
+color12-4.output  color192-7.output  color24-4.output   color48-5.output  color96-6.output
+-bash-4.2$ vim color12-3.output
+-bash-4.2$ vim color12-3.output
+-bash-4.2$ vim color12-3.output
+-bash-4.2$ vim color12-4.output
+-bash-4.2$ vim color24-4.output
+-bash-4.2$ vim color24-5.output
+-bash-4.2$ vim color48-5.output
+solve_message = 'CPLEX 12.7.0.0: optimal integer solution; objective 2\
+309860 MIP simplex iterations\
+18255 branch-and-bound nodes\
+No basis.'
+
+Graph Coloring: 48-5
+Node    Color
+0       4
+1       3
+2       1
+3       0
+4       0
+5       1
+6       3
+7       4
+8       4
+9       4
+10      1
+11      0
+12      3
+13      2
+14      0
+15      2
+16      2
+17      4
+18      4
+19      4
+20      4
+21      4
+22      2
+23      1
+24      3
+25      1
+26      3
+27      0
+28      3
+29      3
+30      4
+31      4
+32      4
+33      4
+34      2
+35      3
+36      2
+37      2
+38      4
+39      2
+40      3
+41      4
+42      2
+43      4
+44      4
+45      2
+46      1
+47      0
+Number of node pairs in conflict: 1
