@@ -1,5 +1,6 @@
 # Project 3
 # File: knapsack.mod
+# Authors: Kevin Do, Ethan Neidhart
 # Solving knapsack problem using ILP
 
 # number of objects
