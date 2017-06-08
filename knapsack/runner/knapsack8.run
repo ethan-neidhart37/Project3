@@ -1,0 +1,22 @@
+option solver "cplex";
+option cplex_options 'time=600';
+
+model knapsack.mod;
+data input/knapsack8.dat;
+solve;
+
+printf "\n#\tValue\tCost\n";
+for {i in 0..n-1} {
+    if x[i] > 0 then {
+        printf "%0s\t%d\t%d\n", i, value[i], cost[i];
+        let Total_Value := Total_Value + value[i];
+        let Total_Cost := Total_Cost + cost[i];
+    }
+}
+
+printf "\n";
+display n;
+display costBound;
+display Total_Value;
+display Total_Cost;
+quit;
