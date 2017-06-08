@@ -1,6 +1,9 @@
 option solver "cplex";
+option cplex_options 'time=600';
+
 model knapsack.mod;
 data input/knapsack8.dat;
 solve;
 
-#Display here
+display Total_Value;
+display x;
