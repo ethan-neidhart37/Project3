@@ -1,5 +1,5 @@
 Authors: Ethan Neidhart, Kevin Do
 
-Knapsack: With CPLEX and its ILP solver feature, runnning knapsack was surprisingly fast (finished solving all instances combined within a second). The solver even produced precise results for the largest instance with ease and little time. For the knapsack part we used a script knapsapRunner.sh to run every instance quickly.
+Knapsack: With CPLEX and its ILP solver feature, runnning knapsack was surprisingly fast (finished solving all instances combined within a second). The solver even produced precise results for the largest instance with ease and little time.
 
 
