@@ -3,7 +3,11 @@ Authors: Ethan Neidhart, Kevin Do
 Knapsack: With CPLEX and its ILP solver feature, runnning knapsack was
 surprisingly fast (finished solving all instances combined within a second).
 The solver even produced precise results for the largest instance with ease and
-little time.
+little time. In comparison, greedy was just as fast as ILP but did not show 
+exact/precise results. Comparing to exhaustive, ILP was faster and showed the
+same precise results as exhaustive. Implementing ILP to solve knapsack is
+evidently more efficient than exhaustive and greedy where its both fast and
+precise.
 
 Graph Coloring: Using an ILP formulation to solve the graph coloring instances,
 we found that the algorithm produced much better results than either the greedy
