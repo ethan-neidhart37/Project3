@@ -1,5 +1,19 @@
 Authors: Ethan Neidhart, Kevin Do
 
-Knapsack: With CPLEX and its ILP solver feature, runnning knapsack was surprisingly fast (finished solving all instances combined within a second). The solver even produced precise results for the largest instance with ease and little time.
+Knapsack: With CPLEX and its ILP solver feature, runnning knapsack was
+surprisingly fast (finished solving all instances combined within a second).
+The solver even produced precise results for the largest instance with ease and
+little time.
 
-
+Graph Coloring: Using an ILP formulation to solve the graph coloring instances,
+we found that the algorithm produced much better results than either the greedy
+algorithm or the exhaustive algorithm for large instances. For small instances,
+all three algorithms were about identical, because they all hit the same
+ceiling. However, this algorithm had the median runtime of the three. Running
+in exponential time, it still took much longer than the greedy algorithm,
+though it would take much larger instances than the exhaustive algorithm to hit
+the 10 minute runtime limit; instances 96-6 and larger hit the limit, while
+instances 48-6 and smaller ran almost instantly. It is also interesting to note
+that if an instance had a "perfect solution", or one where there the conflicts
+could be minimized to 0, the algorithm would run instantly no matter how large
+the instance was.
