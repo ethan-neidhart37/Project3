@@ -2,19 +2,19 @@ option solver cplex;
 option cplex_options 'time=600';
 
 model ../color.mod;
-data ../input/color12-3.dat;
+data ../input/color96-7.dat;
 solve;
 
-display solve_message>../output/color12-3.output;
+display solve_message>../output/color96-7.output;
 
 #number of Conflicts
 param numConflicts default 0;
-printf "Graph Coloring: %d-%d\n">../output/color12-3.output;
-printf "Node\tColor\n">../output/color12-3.output;
+printf "Graph Coloring: %d-%d\n">../output/color96-7.output;
+printf "Node\tColor\n">../output/color96-7.output;
 for {i in 0..numNodes-1}{
         for {j in 0..numColors-1}{
                 if color[i, j] then {
-                        printf "%d\t%d\n", i, j>../output/color12-3.output
+                        printf "%d\t%d\n", i, j>../output/color96-7.output
                 }
         }
         for {j in i..numNodes-1}{
@@ -24,6 +24,6 @@ for {i in 0..numNodes-1}{
         }
 }
 
-printf "Number of node pairs in conflict: %d\n", numConflicts>../output/color12-3.output;
-printf "\n">../output/color12-3.output;
+printf "Number of node pairs in conflict: %d\n", numConflicts>../output/color96-7.output;
+printf "\n">../output/color96-7.output;
 quit;
