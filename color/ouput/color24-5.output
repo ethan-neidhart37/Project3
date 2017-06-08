@@ -1,0 +1,33 @@
+solve_message = 'CPLEX 12.7.0.0: optimal integer solution; objective 0\
+0 MIP simplex iterations\
+0 branch-and-bound nodes\
+No basis.'
+
+Graph Coloring: 24-5
+Node    Color
+0       0
+1       1
+2       0
+3       1
+4       0
+5       2
+6       1
+7       0
+8       1
+9       0
+10      2
+11      3
+12      1
+13      0
+14      1
+15      0
+16      2
+17      1
+18      0
+19      1
+20      0
+21      2
+22      3
+23      4
+Number of node pairs in conflict: 0
+
