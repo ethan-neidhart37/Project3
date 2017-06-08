@@ -17,8 +17,12 @@ param value {i in 0.. n-1};
 # set binary integers
 var x {i in 0.. n-1} binary;
 
+# total value and cost set for display 
+param Total_Value default 0;
+param Total_Cost default 0;
+
 # Objective function
-maximize Total_Value: sum {i in 0.. n-1} value[i] * x[i];
+maximize objective: sum {i in 0.. n-1} value[i] * x[i];
 
 # Constraint: Each object should be less than the costBound
 subject to Cost_Limit: sum {i in 0.. n-1} cost[i] * x[i] <= costBound;
