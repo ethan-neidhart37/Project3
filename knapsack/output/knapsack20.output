@@ -1,22 +1,30 @@
 CPLEX 12.7.0.0: time=600
-CPLEX 12.7.0.0: optimal integer solution; objective 2192
+CPLEX 12.7.0.0: optimal integer solution; objective 6258
 3 MIP simplex iterations
 0 branch-and-bound nodes
 No basis.
 
 #	Value	Cost
-0	122	22
+0	654	554
 1	101	1
 2	219	119
-3	996	896
 4	287	187
 5	467	367
+8	122	22
+9	713	613
+10	447	347
+12	622	522
+13	222	122
+15	586	486
+17	923	823
+18	332	232
+19	563	463
 
-n = 8
+n = 20
 
-costBound = 1639
+costBound = 4875
 
-Total_Value = 2192
+Total_Value = 6258
 
-Total_Cost = 1592
+Total_Cost = 4858
 
