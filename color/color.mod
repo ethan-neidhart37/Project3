@@ -1,5 +1,6 @@
 # Project 3
 # File: color.mod
+# Authors: Ethan Neidhart, Kevin Do
 # Solving graph coloring problem using ILP
 
 # number of nodes
